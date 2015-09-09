@@ -6,7 +6,11 @@
   <body>
     <h1>Welcome to My Blog!</h1>
     {% for post in posts %}
-      {{ post }}
+      <article>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaks }}</p>
+      </article>
     {% endfor %}
   </body>
 </html>

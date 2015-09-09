@@ -1,16 +1,32 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>Claudia's Blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Welcome to My Blog!</h1>
-    {% for post in posts %}
-      <article>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaks }}</p>
-      </article>
-    {% endfor %}
+    <div class="page-header">
+      <h1><a href="">Welcome to My Blog!</a></h1>
+    </div>
+
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+          {% for post in posts %}
+            <div class="post">
+              <div class="date">
+                {{ post.published_date }}
+              </div>
+              <h1><a href="">{{ post.title }}</a></h1>
+              <p>{{ post.text|linebreaks }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </body>
 </html>

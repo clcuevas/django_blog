@@ -7,8 +7,5 @@ __pycache__
 # database files
 *.sqlite3
 
-# Django project folder
-mysite/
-
 .DS_Store
 *.pyc

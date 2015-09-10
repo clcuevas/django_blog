@@ -9,12 +9,21 @@
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="page-header">
+    <header class="page-header">
       {% if user.is_authenticated %}
         <a href="{% url "post_new" %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
       {% endif %}
-      <h1><a href="/">Welcome to My Blog!</a></h1>
-    </div>
+      <h1><a href="/">&#161S&#237, <strong>this</strong>.mexican can code!</a></h1>
+      <nav class="navbar navbar-default">
+        <div>
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/post_list">Blog</a></li>
+          </ul>
+        </div>
+    </header>
     <div class="content container">
       <div class="row">
         <div class="col-md-8">
@@ -23,5 +32,16 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="page-footer">
+        <p>Contact Me!</p>
+        <ul>
+          <li><a href="http://www.linkedin.com/in/clcuevas" target="_blank" title="Visit My LinkedIn Profile"><img src="../static/img/linkedin12.png" alt="LinkedIn Profile" height="40" width="40"></a></li>
+          <li><a href="http://www.github.com/clcuevas" target="_blank" title="View My Code"><img src="../static/img/github8.png" alt="GitHub Profile" height="40" width="40"></a></li>
+          <li><a href="" target="_blank" title="View My Resume"><img src="../static/img/google134.png" alt="Resume" height="40" width="40"></a></li>
+          <li><a href="mailto:claudia.cuevasBA@yahoo.com" title="Email Me!"><img src="../static/img/envelope4.png" alt="Email Me!" height="40" width="40"></a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

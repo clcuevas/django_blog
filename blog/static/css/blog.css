@@ -1,12 +1,6 @@
-h1 a {
-  color: #FCA205;
-  font-family: 'Lobster';
-}
-
-body {
-  padding-left: 15px;
-}
-
+/*
+    HEADER
+*/
 .page-header {
   background-color: #ff9400;
   margin-top: 0;
@@ -19,12 +13,20 @@ body {
   text-decoration: none;
 }
 
-.content {
-  margin-left: 40px;
+.top-menu, .top-menu:hover, .top-menu:visited {
+  color: #fff;
+  float: right;
+  font-size: 26pt;
+  margin-right: 20px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Lobster', cursive;
+/*
+    BODY
+*/
+.content {
+  min-height: 400px;
+  margin-bottom: 120px;
+  clear: both;
 }
 
 .date {
@@ -40,17 +42,43 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-  color: #fff;
-  float: right;
-  font-size: 26pt;
-  margin-right: 20px;
-}
-
 .post {
   margin-bottom: 70px;
 }
 
 .post h1 a, .post h1 a:visited {
   color: #000;
+}
+
+/*
+      FOOTER
+*/
+footer {
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:120px;
+   width:100%;
+   background:#999;
+   text-align: center;
+}
+
+.page-footer p {
+  font-size: 16px;
+  margin-top: 20px;
+  /*text-align: center;*/
+}
+
+.page-footer ul li {
+  list-style: none;
+  display: inline;
+  padding: 2px;
+}
+
+.page-footer a img:hover{
+  -moz-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  -o-transform: translate(-2px, -2px);
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
 }

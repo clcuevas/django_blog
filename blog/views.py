@@ -43,3 +43,13 @@ def post_edit(request, pk):
   else:
     form = PostForm(instance=post)
   return render(request, 'blog/post_edit.html', {'form': form})
+
+# Personal views outside of the Blog
+def landing_page(request):
+  return render(request, 'blog/landing_page.html')
+
+def about(request):
+  return render(request, 'blog/about.html')
+
+def projects(request):
+  return render(request, 'blog/projects.html')

@@ -127,9 +127,9 @@ li.below:after {
   text-align: center;
 }
 
-.page-footer p {
-  font-size: 18px;
-  color: #fff;
+.page-footer h2 {
+  font-size: 22px;
+  color: #6699CC;
   padding-top: 20px;
 }
 

@@ -1,3 +1,30 @@
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -12,13 +39,17 @@ html, body {
   background-color: #555;
   margin: 0 auto;
   padding: 20px;
-  width: 100%;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
   color: #fff;
   font-size: 36pt;
   text-decoration: none;
+}
+
+.header-content {
+  width: 80%;
+  margin: 40px auto 60px auto;
 }
 
 .this-keyword {
@@ -40,11 +71,21 @@ html, body {
 /*  width: inherit;*/
   margin: 0 auto;
   overflow: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
 .about-me {
-  width: 80%;
+  width: 76%;
   margin: 40px auto 60px auto;
+}
+
+.about-me > p {
+  font-size: 16px;
+}
+
+.about-me strong {
+  color: #6699CC;
+  font-weight: bold;
 }
 
 .profile {
@@ -53,7 +94,7 @@ html, body {
 }
 
 .profile img {
-  margin-left: 10%;
+  margin-left: 12%;
   margin-right: 2%;
   float: left;
   border-radius: 150px;
@@ -64,9 +105,26 @@ html, body {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
+.name-title {
+  margin-left: 30%;
+  padding-top: 16px;
+}
+
+.name-title h1 {
+  margin-bottom: -3px;
+}
+
 .landing-page {
-  width: 80%;
+  width: 76%;
   margin: 0 auto;
+}
+
+.landing-page > h3 {
+  font-size: 26px;
+}
+
+.landing-page > p {
+  font-size: 16px;
 }
 
 .date {
@@ -92,8 +150,6 @@ html, body {
 
 .pictures {
   text-align: center;
-/*  background-color: #555;
-  height: 500px;*/
 }
 
 .pictures ul li {
@@ -115,6 +171,15 @@ html, body {
 li.below:after {
   content: attr(title); /* places the contents of title below the image */
   display: block;
+}
+
+.post {
+  width: 76%;
+  margin: 40px auto 60px auto;
+}
+
+.post > p {
+  font-size: 16px;
 }
 
 /*

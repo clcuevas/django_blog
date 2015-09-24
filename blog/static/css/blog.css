@@ -157,6 +157,11 @@ li.below:after {
   font-size: 16px;
 }
 
+.new-post {
+  width: 76%;
+  margin: 40px auto 60px auto;
+}
+
 .projects {
   width: 76%;
   margin: 40px auto 60px auto;

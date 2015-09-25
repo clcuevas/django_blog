@@ -2,13 +2,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
     <title>Claudia's Portfolio</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static "css/blog.css" %}">
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
     <header class="page-header">
@@ -40,17 +44,13 @@
                   </li>
               </ul>
             </div><!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
+          </div><!-- /.container -->
+        </div><!-- /.navbar Fixed navbar-->
+      </div><!-- /.header-content -->
     </header>
     <div class="content">
-      <div class="">
-        <div class="">
-        {% block content %}
-        {% endblock %}
-        </div>
-      </div>
+      {% block content %}
+      {% endblock %}
     </div>
     <footer class="page-footer">
       <h2>Contact Me!</h2>

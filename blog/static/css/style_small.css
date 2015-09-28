@@ -10,7 +10,7 @@
 
   .header-content {
     max-width: 820px;
-    width: 80%;
+    width: 95%;
     margin: 30px auto 40px auto;
   }
 
@@ -30,6 +30,10 @@
   /* ****************
       LANDING PAGE
   ***************** */
+  .landing-page {
+    width: 95%;
+  }
+
   .landing-page img {
     display: block;
     margin-left: auto;
@@ -49,7 +53,7 @@
     padding-top: 0.3em;
   }
 
-    .name-title h1 {
+  .name-title h1 {
     font-size: 23px;
   }
 
@@ -64,6 +68,14 @@
   /* ****************
         ABOUT ME
     ***************** */
+  .about-me {
+    width: 95%;
+  }
+
+  .about-me h2 {
+    text-align: center;
+  }
+
   .about-me h3 {
     font-size: 19px;
   }
@@ -91,11 +103,19 @@
     width: inherit;
   }
 
+  .projects h1 {
+    font-size: 28px;
+  }
+
+  .projects p {
+    font-size: 15px;
+  }
+
   /* ****************
       BLOG
   ***************** */
   .post {
-    width: 76%;
+    width: 95%;
   }
 
   .post h1 {
